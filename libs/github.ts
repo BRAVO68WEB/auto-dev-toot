@@ -1,16 +1,16 @@
 export class Github {
-    private github_username: string;
+    private GH_USERNAME: string;
 
     constructor(
         username: string
     ) {
-        this.github_username = username;
+        this.GH_USERNAME = username;
     }
     
     async fetchCommits(
         since: Date = new Date(Date.now() - 24 * 60 * 60 * 1000)
     ) {
-        const response = await fetch(`https://api.github.com/search/commits?q=author:${this.github_username}&sort=author-date&order=desc&page=1`, {
+        const response = await fetch(`https://api.github.com/search/commits?q=author:${this.GH_USERNAME}&sort=author-date&order=desc&page=1`, {
             headers: {
                 "Accept": "application/vnd.github.v3+json"
             }

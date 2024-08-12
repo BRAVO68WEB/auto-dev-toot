@@ -13,7 +13,7 @@ git clone https://github.com/BRAVO68WEB/auto-dev-toot
 MASTODON_INSTANCE=
 MASTODON_ACCESS_TOKEN=
 GEMINI_API_KEY=
-GITHUB_USERNAME=
+GH_USERNAME=
 NOTIFY_URL=
 ```
 3. Run the following command
