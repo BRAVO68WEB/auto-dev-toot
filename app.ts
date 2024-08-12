@@ -4,7 +4,7 @@ import { Mastodon } from "./libs/masto";
 import { templateGenerator } from "./template";
 import type { CommitMessage } from "./template";
 
-const github = new Github(process.env.GITHUB_USERNAME!);
+const github = new Github(process.env.GH_USERNAME!);
 const masto = new Mastodon(process.env.MASTODON_INSTANCE!, process.env.MASTODON_ACCESS_TOKEN!);
 
 export const app = async () => {
