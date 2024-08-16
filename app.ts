@@ -17,6 +17,10 @@ export const app = async () => {
             commit_message: commit.commit.message,
         }
     });
+    if(CommitMessages.length == 0){
+        await masto.postStatus("Naah, no commits today. #devlife #dayoff");
+        return;
+    }
     const message_template = templateGenerator(CommitMessages);
     const summary = await summarize(message_template, process.env.GEMINI_API_KEY!);
     await masto.postStatus(summary);
