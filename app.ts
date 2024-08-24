@@ -17,6 +17,9 @@ export const app = async () => {
             commit_message: commit.commit.message,
         }
     });
+
+    console.log(CommitMessages);
+
     if(CommitMessages.length == 0){
         await masto.postStatus("Naah, no commits today. #devlife #dayoff");
         return;
