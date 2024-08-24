@@ -24,4 +24,4 @@ bun run index.ts
 
 ### Techstack
 
-![ICONS](https://skillicons.dev/icons?i=bun,ts,mastodon)
+![ICONS](https://skillicons.dev/icons?i=bun,ts,mastodon,github,githubactions)
