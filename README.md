@@ -15,6 +15,7 @@ MASTODON_ACCESS_TOKEN=
 GEMINI_API_KEY=
 GH_USERNAME=
 NOTIFY_URL=
+GH_TOKEN=
 ```
 3. Run the following command
 ```bash
